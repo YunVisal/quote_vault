@@ -16,19 +16,61 @@
     </header>
     <main>
       <article>
-        <section>
-          <div>
-            <h2>"The only way to do great work is to love what you do."</h2>
-            <h3>— Steve Jobs</h3>
+        <section class="card quote-card">
+          <div class="quote">
+            <h2 class="content">
+              The only way to do great work is to love what you do.
+            </h2>
+            <h3 class="author">— Steve Jobs</h3>
           </div>
-          <div>
-            <button>New Quote</button>
-            <button>Copy</button>
+          <div class="action">
+            <button class="action-btn new-quote-btn">
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                height="1.2rem"
+                width="1.2rem"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"
+                ></path>
+                <path d="M21 3v5h-5"></path>
+                <path
+                  d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"
+                ></path>
+                <path d="M8 16H3v5"></path>
+              </svg>
+              <p>New Quote</p>
+            </button>
+            <button class="action-btn copy-quote-btn">
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                height="1.2rem"
+                width="1.2rem"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                <path
+                  d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"
+                ></path>
+              </svg>
+              <p>Copy</p>
+            </button>
           </div>
         </section>
-        <section>Inspiring quotes to brighten your day</section>
       </article>
     </main>
+    <footer>Inspiring quotes to brighten your day</footer>
 
     <script src="./scripts/dom.js"></script>
   </body>

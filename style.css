@@ -10,6 +10,16 @@
     --theme-btn-bg-color: #1f2937;
     --theme-btn-hover-bg-color: #374151;
     --theme-btn-fg-color: #ffffff;
+
+    --quote-card-bg-color: rgba(255, 255, 255, 0.9);
+    --quote-card-border: 1px solid #e5e7eb;
+    --quote-content-color: #1f2937;
+    --quote-author-color: #2563eb;
+
+    --new-quote-hover-bg-color: #1d4ed8;
+    --copy-quote-hover-bg-color: #047857;
+
+    --footer-fg-color: #4b5563;
  }
  
  [data-theme="dark"] {
@@ -24,15 +34,26 @@
     --theme-btn-bg-color: #f59e0b;
     --theme-btn-hover-bg-color: #fbbf24;
     --theme-btn-fg-color: #111827;
+
+    --quote-card-bg-color: rgba(31, 41, 55, 0.9);
+    --quote-card-border: 1px solid #374151;
+    --quote-content-color: #f3f4f6;
+    --quote-author-color: #60a5fa;
+    
+    --new-quote-hover-bg-color: #3b82f6;
+    --copy-quote-hover-bg-color: #10b981;
+
+    --footer-fg-color: #9ca3af;
  }
 
 body {
-    padding: 1.3rem;
+    padding: 2rem 1.3rem;
     background: var(--color-bg);
     color: var(--color-fg);
 }
 
 header {
+    margin: 1rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,8 +80,103 @@ header .theme_toggle_btn:hover {
     background-color: var(--theme-btn-hover-bg-color);
 }
 
+.quote-card {
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: var(--quote-card-bg-color);
+    backdrop-filter: blur(4px);
+    border: var(--quote-card-border);
+    transition: transform 0.2s ease;
+}
+
+.quote-card:hover {
+    transform: scale(1.02);
+}
+
+.quote-card .quote {
+    margin-bottom: 2rem;
+}
+
+.quote-card .quote .content {
+    font-size: 1.4rem;
+    color: var(--quote-content-color);
+}
+
+.quote-card .quote .author {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: var(--quote-author-color);
+}
+
+.quote-card .action {
+    display: flex;
+    flex-direction: column;
+}
+
+.quote-card .action .action-btn {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-card .action .action-btn:hover {
+    transform: scale(1.05);
+}
+
+.quote-card .action .action-btn p {
+    margin: 0;
+    margin-left: .5rem;
+}
+
+.quote-card .action .new-quote-btn {
+    background-color: #2563eb;
+}
+
+.quote-card .action .new-quote-btn:hover {
+    background-color: var(--new-quote-hover-bg-color);
+}
+
+.quote-card .action .copy-quote-btn {
+    background-color: #059669;
+}
+
+.quote-card .action .copy-quote-btn:hover {
+    background-color: var(--copy-quote-hover-bg-color);
+}
+
+footer {
+    text-align: center;
+    color: var(--footer-fg-color);
+}
+
 @media (min-width: 768px) { 
     body {
         padding: 2.6rem 10rem;
+    }
+
+    .quote-card .action{
+        width: 50%;
+        margin: auto;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .quote-card .action .action-btn {
+        width: 50%;
+        margin-right: 1rem;
+        padding: 1.1rem;
+        font-size: 1.1rem;
     }
 }
