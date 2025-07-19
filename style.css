@@ -1,5 +1,35 @@
+[data-theme="light"] {
+    --color-bg: linear-gradient(
+        to bottom right,
+        #eff6ff,   /* from-blue-50 */
+        #ffffff,   /* via-white */
+        #eef2ff    /* to-indigo-50 */
+    );
+    --color-fg: #000000;
+
+    --theme-btn-bg-color: #1f2937;
+    --theme-btn-hover-bg-color: #374151;
+    --theme-btn-fg-color: #ffffff;
+ }
+ 
+ [data-theme="dark"] {
+    --color-bg: linear-gradient(
+        to bottom right,
+        #111827,  /* from-gray-900 */
+        #1e3a8a,  /* via-blue-900 */
+        #1f2937   /* to-gray-800 */
+      );
+    --color-fg: #ffffff;
+
+    --theme-btn-bg-color: #f59e0b;
+    --theme-btn-hover-bg-color: #fbbf24;
+    --theme-btn-fg-color: #111827;
+ }
+
 body {
     padding: 1.3rem;
+    background: var(--color-bg);
+    color: var(--color-fg);
 }
 
 header {
@@ -14,18 +44,19 @@ header .title {
 }
 
 header .theme_toggle_btn {
-    background-color: black;
-    color: white;
+    background-color: var(--theme-btn-bg-color);
+    color: var(--theme-btn-fg-color);
     padding: .6rem;
     border: none;
     outline: none;
     border-radius: 50%;
     cursor: pointer;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 header .theme_toggle_btn:hover {
     transform: scale(1.1);
+    background-color: var(--theme-btn-hover-bg-color);
 }
 
 @media (min-width: 768px) { 

@@ -1,30 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="base.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src="./scripts/constant.js"></script>
+    <script src="./scripts/theme.js"></script>
     <title>Quote Vault</title>
   </head>
-  <body>
+  <body class="full-height">
     <header>
       <h1 class="title">Quote Vault</h1>
-      <button class="theme_toggle_btn">
-        <svg
-          stroke="currentColor"
-          fill="none"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          height="1.5rem"
-          width="1.5rem"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
-        </svg>
-      </button>
+      <button class="theme_toggle_btn"></button>
     </header>
     <main>
       <article>
@@ -41,5 +29,7 @@
         <section>Inspiring quotes to brighten your day</section>
       </article>
     </main>
+
+    <script src="./scripts/dom.js"></script>
   </body>
 </html>
