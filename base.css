@@ -1,0 +1,150 @@
+/* ====== RESET ====== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ====== BASE ====== */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+/* ====== TYPOGRAPHY ====== */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* ====== CONTAINER ====== */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.section {
+  padding: 2rem 0;
+}
+
+/* ====== LAYOUT HELPERS ====== */
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+/* ====== FLEX & GRID ====== */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-2-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+/* ====== BUTTON ====== */
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  background-color: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #3730a3;
+}
+
+/* ====== CARD ====== */
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+}
+
+/* ====== FORM STYLES ====== */
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #4f46e5;
+  outline: none;
+}
+
+/* ====== IMAGE ====== */
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+/* ====== LINKS ====== */
+a {
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ====== TRANSITION UTILITY ====== */
+.transition {
+  transition: all 0.3s ease-in-out;
+}
+
+/* ====== RESPONSIVE (Tablet and Up) ====== */
+@media (min-width: 768px) {
+  .grid-2-col {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+
+  .card {
+    padding: 2rem;
+  }
+}

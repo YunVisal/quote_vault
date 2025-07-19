@@ -1,0 +1,35 @@
+body {
+    padding: 1.3rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .title {
+    font-size: 2rem;
+    margin: 0;
+}
+
+header .theme_toggle_btn {
+    background-color: black;
+    color: white;
+    padding: .6rem;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+header .theme_toggle_btn:hover {
+    transform: scale(1.1);
+}
+
+@media (min-width: 768px) { 
+    body {
+        padding: 2.6rem 10rem;
+    }
+}
