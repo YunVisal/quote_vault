@@ -26,7 +26,7 @@ const QUOTE_API_URL = "https://api.allorigins.win/raw?url=https://zenquotes.io/a
 
 /* ====== ICON ====== */
 
-const MOONICON = `<svg
+const MOON_ICON = `<svg
     stroke="currentColor"
     fill="none"
     stroke-width="2"
@@ -40,7 +40,7 @@ const MOONICON = `<svg
     <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
     </svg>`;
 
-const SUNICON = `<svg 
+const SUN_ICON = `<svg 
     stroke="currentColor" 
     fill="none" 
     stroke-width="2" 
@@ -61,5 +61,28 @@ const SUNICON = `<svg
     <path d="m6.34 17.66-1.41 1.41"></path>
     <path d="m19.07 4.93-1.41 1.41"></path>
 </svg>`;
+
+const COPY_ICON = `<svg
+                class="copy-quote-btn-icon"
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                height="1.5rem"
+                width="1.5rem"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                <path
+                  d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"
+                ></path>
+              </svg>
+`;
+
+const CHECK_ICON = `
+    <svg class="bound" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1.5rem" width="1.5rem" xmlns="http://www.w3.org/2000/svg"><path d="M20 6 9 17l-5-5"></path></svg>
+`
 
 /* ====== END: ICON ====== */

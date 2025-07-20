@@ -24,9 +24,9 @@ function toggleTheme() {
 function getThemeIcon() {
     var currentTheme = localStorage.getItem(THEME_LOCALSTORAGE_KEY);
     if(currentTheme == null) {
-        return {icon: MOONICON};
+        return {icon: MOON_ICON};
     }
     else {
-        return {icon: currentTheme == LIGHT_MODE_VALUE ? MOONICON : SUNICON};
+        return {icon: currentTheme == LIGHT_MODE_VALUE ? MOON_ICON : SUN_ICON};
     }
 }
