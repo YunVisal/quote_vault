@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <script src="./scripts/constant.js"></script>
     <script src="./scripts/theme.js"></script>
+    <script src="./scripts/quote.js"></script>
     <title>Quote Vault</title>
   </head>
   <body class="full-height">
@@ -18,14 +19,13 @@
       <article>
         <section class="card quote-card">
           <div class="quote">
-            <h2 class="content">
-              The only way to do great work is to love what you do.
-            </h2>
-            <h3 class="author">— Steve Jobs</h3>
+            <h2 id="quote_content" class="content"></h2>
+            <h3 id="quote_author" class="author"></h3>
           </div>
           <div class="action">
-            <button class="action-btn new-quote-btn">
+            <button id="generate_quote_btn" class="action-btn new-quote-btn">
               <svg
+                class="new-quote-btn-icon"
                 stroke="currentColor"
                 fill="none"
                 stroke-width="2"
@@ -49,6 +49,7 @@
             </button>
             <button class="action-btn copy-quote-btn">
               <svg
+                class="copy-quote-btn-icon"
                 stroke="currentColor"
                 fill="none"
                 stroke-width="2"
