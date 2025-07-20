@@ -24,6 +24,33 @@ document.addEventListener("DOMContentLoaded", async function() {
         generateQuoteBtn.disabled = false;
     });
 
+    var copyBtn = document.getElementById("copy_quote_btn");
+    copyBtn.innerHTML = COPY_ICON;
+    var btnLabel = document.createElement("p");
+    btnLabel.innerText = "Copy";
+    copyBtn.appendChild(btnLabel);
+    
+    copyBtn.addEventListener("click", function() {
+        copyBtn.disabled = true;
+        var btnIcon = copyBtn.querySelector("svg");
+        btnIcon.outerHTML = CHECK_ICON;
+        var btnLabel = copyBtn.querySelector("p");
+        btnLabel.innerText = "Copied";
+
+        var contentElement = document.getElementById("quote_content");
+        var authorElement = document.getElementById("quote_author");
+        var copiedQuote = contentElement.innerText + " " + authorElement.innerText;
+        navigator.clipboard.writeText(copiedQuote);
+
+        setTimeout(() => {
+            copyBtn.innerHTML = COPY_ICON;
+            var btnLabel = document.createElement("p");
+            btnLabel.innerText = "Copy";
+            copyBtn.appendChild(btnLabel);
+            copyBtn.disabled = false;
+        }, 1000);
+    });
+
     renderQuote();
 });
 
