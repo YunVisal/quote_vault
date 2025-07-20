@@ -130,6 +130,10 @@ header .theme_toggle_btn:hover {
     align-items: center;
 }
 
+.quote-card .action .action-btn:disabled {
+    opacity: 0.5;
+}
+
 .quote-card .action .action-btn:hover {
     transform: scale(1.05);
 }
@@ -147,18 +151,44 @@ header .theme_toggle_btn:hover {
     background-color: var(--new-quote-hover-bg-color);
 }
 
+.quote-card .action .new-quote-btn .new-quote-btn-icon {
+    transition: transform 0.3s ease;
+}
+
+.quote-card .action .new-quote-btn:hover .new-quote-btn-icon {
+    transform: scale(1.1) rotate(180deg);
+}
+
+.quote-card .action .new-quote-btn .new-quote-btn-icon.spin {
+    animation: spin 0.5s linear infinite;
+}
+
 .quote-card .action .copy-quote-btn {
     background-color: #059669;
+}
+
+.quote-card .action .copy-quote-btn .copy-quote-btn-icon {
+    transition: transform 0.3s ease;
 }
 
 .quote-card .action .copy-quote-btn:hover {
     background-color: var(--copy-quote-hover-bg-color);
 }
 
+.quote-card .action .copy-quote-btn:hover .copy-quote-btn-icon {
+    transform: scale(1.1);
+}
+
 footer {
     text-align: center;
     color: var(--footer-fg-color);
 }
+
+@keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
 
 @media (min-width: 768px) { 
     body {

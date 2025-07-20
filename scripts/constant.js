@@ -5,7 +5,23 @@ const THEME_LOCALSTORAGE_KEY = "theme";
 /* ====== CONSTANT VALUE ====== */
 const LIGHT_MODE_VALUE = "light";
 const DARK_MODE_VALUE = "dark";
+const BACKUP_QUOTE = [
+    { content: "The only way to do great work is to love what you do.", author: "Steve Jobs" },
+    { content: "Life is what happens to you while you're busy making other plans.", author: "John Lennon" },
+    { content: "The future belongs to those who believe in the beauty of their dreams.", author: "Eleanor Roosevelt" },
+    { content: "It is during our darkest moments that we must focus to see the light.", author: "Aristotle" },
+    { content: "The only impossible journey is the one you never begin.", author: "Tony Robbins" },
+    { content: "In the end, we will remember not the words of our enemies, but the silence of our friends.", author: "Martin Luther King Jr." },
+    { content: "The way to get started is to quit talking and begin doing.", author: "Walt Disney" },
+    { content: "Don't let yesterday take up too much of today.", author: "Will Rogers" },
+    { content: "You learn more from failure than from success. Don't let it stop you. Failure builds character.", author: "Unknown" },
+    { content: "If you are working on something that you really care about, you don't have to be pushed. The vision pulls you.", author: "Steve Jobs" }
+];
 /* ====== END: CONSTANT VALUE ====== */
+
+/* ====== URL ====== */
+const QUOTE_API_URL = "https://api.allorigins.win/raw?url=https://zenquotes.io/api/random";
+/* ====== END: URL ====== */
 
 
 /* ====== ICON ====== */
