@@ -90,7 +90,7 @@ header .theme_toggle_btn:hover {
 }
 
 .quote-card:hover {
-    transform: scale(1.02);
+    transform: none;
 }
 
 .quote-card .quote {
@@ -135,7 +135,7 @@ header .theme_toggle_btn:hover {
 }
 
 .quote-card .action .action-btn:hover {
-    transform: scale(1.05);
+    transform: none;
 }
 
 .quote-card .action .action-btn p {
@@ -156,7 +156,7 @@ header .theme_toggle_btn:hover {
 }
 
 .quote-card .action .new-quote-btn:hover .new-quote-btn-icon {
-    transform: scale(1.1) rotate(180deg);
+    transform: none;
 }
 
 .quote-card .action .new-quote-btn .new-quote-btn-icon.spin {
@@ -176,7 +176,7 @@ header .theme_toggle_btn:hover {
 }
 
 .quote-card .action .copy-quote-btn:hover .copy-quote-btn-icon {
-    transform: scale(1.1);
+    transform: none;
 }
 
 .bound {
@@ -223,5 +223,21 @@ footer {
         margin-right: 1rem;
         padding: 1.1rem;
         font-size: 1.1rem;
+    }
+
+    .quote-card:hover {
+        transform: scale(1.02);
+    }
+
+    .quote-card .action .action-btn:hover {
+        transform: scale(1.05);
+    }
+
+    .quote-card .action .new-quote-btn:hover .new-quote-btn-icon {
+        transform: scale(1.1) rotate(180deg);
+    }
+
+    .quote-card .action .copy-quote-btn:hover .copy-quote-btn-icon {
+        transform: scale(1.1);
     }
 }

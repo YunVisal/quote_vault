@@ -20,7 +20,9 @@ const BACKUP_QUOTE = [
 /* ====== END: CONSTANT VALUE ====== */
 
 /* ====== URL ====== */
-const QUOTE_API_URL = "https://api.allorigins.win/raw?url=https://zenquotes.io/api/random";
+const QUOTE_API_URL = "https://quotes-api12.p.rapidapi.com/quotes";
+const QUOTE_API_HOST = "quotes-api12.p.rapidapi.com";
+const QUOTE_API_KEY = "05915210a0mshd44138d350b75fep18c294jsn3f9216b6fecd";
 /* ====== END: URL ====== */
 
 
